@@ -1,0 +1,10 @@
+title Notes Form Submit
+note right of browser: Contains Form Data
+browser->server: HTTP Post https://studies.cs.helsinki.fi/exampleapp/new_note
+server->browser: Response code 302 - redirect/reload https://studies.cs.helsinki.fi/exampleapp/notes
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+server-->browser: HTML-code
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: main.css
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+server-->browser: main.js

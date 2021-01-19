@@ -1,0 +1,4 @@
+title Goto SPA 
+browser->server: HTTP Post https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+note over server: pushes note onto list, saves to server, refreshes note list on DOM
+server->browser: Response code 201
