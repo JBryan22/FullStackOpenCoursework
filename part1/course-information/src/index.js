@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import ReactDOM from "react-dom";
 
 const App = () => {
@@ -39,18 +38,9 @@ const Header = (props) => <h1>{props.course}</h1>;
 
 const Content = (props) => (
   <div>
-    <Part
-      part={props.parts[0].name}
-      exercises={props.parts[0].exercises}
-    ></Part>
-    <Part
-      part={props.parts[1].name}
-      exercises={props.parts[1].exercises}
-    ></Part>
-    <Part
-      part={props.parts[2].name}
-      exercises={props.parts[2].exercises}
-    ></Part>
+    <Part part={props.parts[0]}></Part>
+    <Part part={props.parts[1]}></Part>
+    <Part part={props.parts[2]}></Part>
   </div>
 );
 
@@ -58,7 +48,7 @@ const Total = (props) => <p>Number of exercises {props.total}</p>;
 
 const Part = (props) => (
   <p>
-    {props.part} {props.exercises}
+    {props.part.name} {props.part.exercises}
   </p>
 );
 
